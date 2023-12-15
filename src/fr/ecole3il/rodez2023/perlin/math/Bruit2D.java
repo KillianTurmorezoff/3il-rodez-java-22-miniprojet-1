@@ -8,6 +8,7 @@ public abstract class Bruit2D {
     
     /** La graine utilisée pour la génération du bruit */
     private final long graine;
+    private final double resolution;
     
     /**
      * Constructeur de la classe Noise2D.
@@ -15,6 +16,11 @@ public abstract class Bruit2D {
      */
     public Bruit2D(long graine, double resolution) {
         this.graine = graine;
+        if(resolution <= 0) {
+        	throw new ArithmeticException("resolution inférieur à zéro impossible");
+        } else {
+        	this.resolution = resolution;
+        }
     }
     
     /**
@@ -32,5 +38,12 @@ public abstract class Bruit2D {
     public long getGraine() {
         return graine;
     }
+    
+    public void setResolution(double resolution) {
+    	resolution = this.resolution;
+    }
 
+    public double getResolution() {
+    	return resolution;
+    }
 }
