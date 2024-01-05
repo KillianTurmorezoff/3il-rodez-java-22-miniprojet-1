@@ -23,7 +23,8 @@ import fr.ecole3il.rodez2023.perlin.math.BruitPerlin2D;
  */
 public class VisualiseurBruitPerlin extends JFrame {
 
-    // Constantes définissant la taille par défaut de l'image
+    private static final long serialVersionUID = 1L;
+	// Constantes définissant la taille par défaut de l'image
     private static final int WIDTH = 400;
     private static final int HEIGHT = 400;
     private static final double DEFAULT_RESOLUTION = 1.0f;
@@ -111,7 +112,9 @@ public class VisualiseurBruitPerlin extends JFrame {
         
         
         ////////// CODE À MODIFIER 
-        noiseImage = new truc;
+        BruitPerlin2D BruitPerlin = new BruitPerlin2D(seed, resolution);
+        noiseImage = new ImageBruit(BruitPerlin);
+        
         
         ////////// FIN CODE À MODIFIER
         tickImageButton.setEnabled(true); // Désactiver le bouton initialement
