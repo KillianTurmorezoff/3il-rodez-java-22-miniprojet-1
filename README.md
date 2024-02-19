@@ -207,7 +207,7 @@ On pourrait, par exemple, construire une classe pour chaque, qui hériterait de 
 
 **Question :** Réaliser l'architecture que prendrait la forme d'une telle modélisation sous forme d'un diagramme UML. Quelle serait la différence d'attributs et de méthodes entre ces classes ? Expliquer, en s'appuyant sur un exercice vu en cours, pourquoi c'est une mauvaise idée. Quelle est la solution qu'il faudrait préférer (et que l'on va préférer) ?
 
-**Réponse :** C'est une mauvaise idée car il y a beaucoup d'héritage alors que l'on pourrait utiliser une interface ce qui est bien plus clair à utiliser.
+**Réponse :** C'est une mauvaise idée car il y a beaucoup d'héritage alors que l'on pourrait utiliser un enum ce qui est bien plus clair à utiliser dans notre cas.
 
 ### Modélisons le (type de) terrain
 
