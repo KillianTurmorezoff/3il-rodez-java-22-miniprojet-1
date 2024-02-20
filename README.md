@@ -236,6 +236,7 @@ La plupart des jeux de type bac à sable utilisent trois valeurs pour générer 
 Créez la classe `Terrain` qui comportera trois accesseurs (un pour l'hydrométrie, un pour la température, et un pour l'altitude) - `getHydrometrie`, `getTemperature` et `getAltitude`. On veut pouvoir rentrer des informations décimales suffisamment précises (au moins en double précision).
 
 **Question :** quel type utilisez-vous ?
+**Réponse :** des double.
 
 Pour des raisons de simplification, on **ne veut pas** que les valeurs de ces caractéristiques soient faites "à la louche". On s'assurera donc de les limiter : l'hydrométrie et la température doivent être comprises entre 0 et 1, l'altitude entre -1 et 1. On lèvera l'exception `MauvaiseValeurException` si une condition n'est pas respectée. L'exception en question héritera d'une exception **qui détermine qu'un argument est illégal**.
 
