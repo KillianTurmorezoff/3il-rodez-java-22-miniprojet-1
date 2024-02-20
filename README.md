@@ -257,6 +257,7 @@ En utilisant le patron Visiteur, vous pouvez séparer le code lié à la manipul
 Dans notre cas, on veut pouvoir déterminer le type de terrain en fonction des trois caractéristiques, mais on veut éviter de modifier la classe à chaque fois qu'on change de détermination - on a donc un Visiteur qui s'en occupe.
 
 **Question :** pourquoi sortir, selon vous, ce bout d'algorithme de la classe ?
+**Réponse :** faciliter la maintenance du code et être modulaire.
 
 ### JE SUIS LA CARTE
 
