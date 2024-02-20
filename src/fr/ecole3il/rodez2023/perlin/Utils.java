@@ -51,7 +51,7 @@ public class Utils {
     public static int[] melanger(int[] tab, long seed) {
     	
     	Random rand = new Random(seed);
-    	for (int i = tab.length; i > 0; i--) {
+    	for (int i = tab.length - 1; i > 0; i--) {
     		int j = rand.nextInt(i);
     		int tmp = tab[i];
     		tab[i] = tab[j];
