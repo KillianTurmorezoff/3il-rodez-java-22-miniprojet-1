@@ -6,7 +6,7 @@ import fr.ecole3il.rodez2023.perlin.Utils;
 public enum TypeTerrain {
     COLLINES("Collines", "hills.png"),
     DESERT("Désert", "desert.png"),
-    FORET_CONIFERES("Forêt de conifères", "coniferous_forest.png"),
+    FORET_CONIFÈRES("Forêt de conifères", "coniferous_forest.png"),
     FORET_FEUILLUS("Forêt de feuillus", "deciduous_forest.png"),
     MARAIS("Marais", "marsh.png"),
     MONTAGNE("Montagne", "mountain.png"),
