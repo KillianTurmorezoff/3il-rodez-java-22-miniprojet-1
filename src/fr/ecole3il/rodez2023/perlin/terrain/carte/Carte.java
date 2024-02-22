@@ -32,8 +32,8 @@ public class Carte {
             // Lecture des données de terrain
             for (int i = 0; i < largeur; i++) {
                 for (int j = 0; j < hauteur; j++) {
-                    double altitude = scanner.nextDouble();
-                    double hydrometrie = scanner.nextDouble();
+                	double altitude = scanner.nextDouble() * 2 - 1;
+                	double hydrometrie = scanner.nextDouble();
                     double temperature = scanner.nextDouble();
                     this.terrains[i][j] = new Terrain(altitude, hydrometrie, temperature);
                 }
