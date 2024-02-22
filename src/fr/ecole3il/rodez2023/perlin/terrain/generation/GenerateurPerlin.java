@@ -42,13 +42,13 @@ public class GenerateurPerlin extends GenerateurCarte {
         double hydrometrie = bruitHydrometrie.bruit2D(normI, normJ);
 
         // Générateur de bruit pour la température
-        BruitPerlin2D bruitTemperature = new BruitPerlin2D(2 * getGraine(), 1.0);
+        BruitPerlin2D bruitTemperature = new BruitPerlin2D(getGraine(), 1.0); // Utilise une graine différente
         double temperature = bruitTemperature.bruit2D(normI, normJ);
 
         // Générateur de bruit pour l'altitude
-        BruitPerlin2D bruitAltitude = new BruitPerlin2D(4 * getGraine(), 1.0);
+        BruitPerlin2D bruitAltitude = new BruitPerlin2D(getGraine(), 1.0); // Utilise une autre graine différente
         double altitude = bruitAltitude.bruit2D(normI, normJ);
-
+        
         // Normalisation des valeurs entre 0 et 1
         hydrometrie = (hydrometrie + 1) / 2;
         temperature = (temperature + 1) / 2;
