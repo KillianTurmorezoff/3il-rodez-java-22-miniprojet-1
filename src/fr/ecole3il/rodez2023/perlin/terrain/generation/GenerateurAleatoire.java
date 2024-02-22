@@ -13,7 +13,7 @@ import java.util.Random;
  * @author killian turmorezoff
  */
 public class GenerateurAleatoire extends GenerateurCarte {
-
+    private Random random;
     /**
      * Constructeur du générateur de carte aléatoire.
      *
@@ -21,6 +21,7 @@ public class GenerateurAleatoire extends GenerateurCarte {
      */
     public GenerateurAleatoire(long graine) {
         super(graine);
+        this.random = new Random(graine);
     }
 
     /**
@@ -34,13 +35,12 @@ public class GenerateurAleatoire extends GenerateurCarte {
      */
     @Override
     protected Terrain genererTerrain(int i, int j, int largeur, int hauteur) {
-        Random random = new Random(getGraine());
 
         // Génération aléatoire des valeurs pour l'hydrométrie, la température et l'altitude
+        double altitude = random.nextDouble() * 2 - 1; // Plage de -1 à 1
         double hydrometrie = random.nextDouble();
         double temperature = random.nextDouble();
-        double altitude = random.nextDouble();
-
+        
         // Création du terrain avec les valeurs aléatoires
         return new Terrain(hydrometrie, temperature, altitude);
     }

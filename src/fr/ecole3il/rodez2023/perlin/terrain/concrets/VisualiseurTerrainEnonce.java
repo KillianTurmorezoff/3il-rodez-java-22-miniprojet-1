@@ -77,6 +77,6 @@ public class VisualiseurTerrainEnonce {
         else if ((hydrometrie > 0.25 && hydrometrie <= 0.7) && altitude > 0.7 && (temperature > 0.25 && temperature <= 0.7))
             return TypeTerrain.MONTAGNE;
         else
-            return TypeTerrain.MONTAGNE;
+            return TypeTerrain.PLAINE;
     }
 }
